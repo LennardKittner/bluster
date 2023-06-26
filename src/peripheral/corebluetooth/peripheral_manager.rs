@@ -123,7 +123,7 @@ impl PeripheralManager {
                 NSArray::from_vec(
                     uuids
                         .iter()
-                        .map(|u| NSString::from_str(&u.to_hyphenated().to_string()))
+                        .map(|u| NSString::from_str(&u.hyphenated().to_string()))
                         .collect::<Vec<Id<NSString>>>()
                 ),
                 copy
